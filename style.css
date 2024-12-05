@@ -1,6 +1,88 @@
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.right-0 {
+    right: 0;
+  }
+  
+.right-360 {
+    right: -360px;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  width: 360px;
+  height: 100vh;
+  background-color: #28a745;
+  z-index: 50;
+  transition-duration: 200ms;
+}
+#menu button {
+  all: unset;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  color: #000000;
+  background-color: #28a745;
+}
+
+#topo-menu {
+  display: flex;
+  justify-content: space-between;
+}
+#topo-menu p {
+  margin: 10px;
+}
+#corpo-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px;
+}
+#corpo-menu a {
+  all: unset;
+  color: #000000;
+}
+#corpo-menu a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+  
+header {
+  background-color: #28a745;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 64px;
+}
+
+header > div {
+  color: #000000;
+  padding: 5px;
+}
+header button {
+  all: unset;
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0px;
 }
 
 h1 {
