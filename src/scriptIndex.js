@@ -153,6 +153,9 @@ function renderProducts(products) {
 
         tbody.appendChild(linha);
     });
+
+    const total = document.getElementById('total')
+    total.innerText = `Total de vendas: ${products.length}`
 }
 
 fetchProducts()
